@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Francis Tseng -- Designer/Developer -- @frnsys
+
+# THANKS
+
+    Knight Foundation
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
