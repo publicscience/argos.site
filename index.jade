@@ -1,55 +1,78 @@
 include inc/head
-    //-.hello
-        //-img(src='/assets/img/logo.png')
-        //-h1 Argos
-        //-.creed Know more with less.
-    //-.about
-        //-p Argos is currently being developed under a grant from:
-        //-img(src='/assets/img/knight.png')
+    section.scene(style='background-image:url("/assets/scenes/intro.jpg")')
+        .dot
+        figcaption
+            .icon
+                img(src='/assets/icons/intro.png')
+            .info
+                h1 Know more with less.
+        .credit Photo: <a href="https://www.flickr.com/photos/ramyraoof/5398212040">Ramy Raoof</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)
 
     section.scene(style='background-image:url("/assets/scenes/events.jpg")')
+        .dot
         figcaption
             .icon
                 img(src='/assets/icons/events.png')
             .info
-                h2 Events
-                h6 Keep up with everything that's happened in a story.
+                h4 Events
+                h1 Keep up with everything that's happened in a story.
                 p Argos is capable of recognizing when articles are talking about the same event, and will condense them into a single summary for you. Events belonging to the same story are automatically brought together in a timeline so that you can quickly get caught up on any story.
 
     section.scene(style='background-image:url("/assets/scenes/concepts.jpg")')
+        .dot
         figcaption
             .icon
                 img(src='/assets/icons/concepts.png')
             .info
-                h2 Concepts
-                h6 Quickly pick up the concepts in a story.
+                h4 Concepts
+                h1 Quickly pick up the concepts in a story.
                 p Confused about the concepts behind what you're reading about? Argos connects with you with quick summaries so you can get a grasp on them right away.
 
     section.scene(style='background-image:url("/assets/scenes/entities.jpg")')
+        .dot
         figcaption
             .icon
                 img(src='/assets/icons/entities.png')
             .info
-                h2 Entities
-                h6 Understand the people, places, and organizations involved.
+                h4 Entities
+                h1 Understand the people, places, and organizations involved.
                 p Who has the most to lose? Who has the most to gain? What are the organizations that are influencing the outcome of this story? Using open web data, Argos pulls up this background information and gives it to you.
 
     section.scene(style='background-image:url("/assets/scenes/watch.jpg")')
+        .dot
+        .credit Photo: <a href="https://www.flickr.com/photos/11036666@N08/11155511025/">Nessa Gnatoush</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)
         figcaption
             .icon
                 img(src='/assets/icons/watch.png')
             .info
-                h2 Watch
-                h6 Track the stories that are important to you.
+                h4 Watch
+                h1 Track the stories that are important to you.
                 p Get up-to-date notifications about the latest developments in the stories you're personally interested in. Argos makes it easy not only to keep up with them, but also to dive in and gain a deep understanding.
 
     section.scene(style='background-image:url("/assets/scenes/trending.jpg")')
+        .dot
         figcaption
             .icon
                 img(src='/assets/icons/trending.png')
             .info
-                h2 Trending
-                h6 Hear about the stories that are important for everyone else.
+                h4 Trending
+                h1 Know about the stories that are important for everyone else.
                 p Get a sense of what everyone else is talking about and stay on top of the issues that matter to the world. Stay engaged with and aware of everything that's happening around you with less time.
 
     section.about
+        ul.list__horizontal
+            li
+                img(src='/assets/img/free-for-all.svg')
+                h3 Open Platform
+                p
+                    a(href='/docs') API documentation
+            li
+                img(src='/assets/img/open-source.svg')
+                h3 Open Source
+                p
+                    a(href='https://github.com/publicscience/argos') Source code
+        .grant
+            p Argos is currently being developed by <a href="https://twitter.com/frnsys">@frnsys</a> under a grant from:
+            img(src='/assets/img/knight.png')
+
+    footer(role='colophon') Copyright 2013-2014 <a href="http://publicscience.co/">Public Science</a>.
